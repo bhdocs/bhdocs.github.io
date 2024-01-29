@@ -13,15 +13,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://blizzhackers.dev',
+  url: 'https://bhdocs.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'blizzhackers', // Usually your GitHub org/user name.
-  projectName: 'bh-docs', // Usually your repo name.
+  organizationName: 'bhdocs', // Usually your GitHub org/user name.
+  projectName: 'bhdocs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
