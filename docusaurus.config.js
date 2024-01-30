@@ -71,7 +71,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
           {
             href: 'https://github.com/bhdocs/bhdocs.github.io',
@@ -87,8 +87,24 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'D2BS',
                 to: '/docs/intro',
+              },
+              {
+                label: 'D2Bot#',
+                to: '/docs/category/d2bot',
+              },
+              {
+                label: 'Kolbot',
+                to: '/docs/category/kolbot',
+              },
+              {
+                label: 'SoloPlay',
+                to: '/docs/category/soloplay',
+              },
+              {
+                label: 'Limedrop',
+                to: '/docs/category/limedrop',
               },
             ],
           },
@@ -112,10 +128,13 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/bhdocs/bhdocs.github.io',
               },
+              {
+                label: 'Built with Docusaurus',
+                href: 'https://docusaurus.io/'
+              }
             ],
           },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Blizzhackers. Built with Docusaurus.`,
+        ]
       },
       prism: {
         theme: prismThemes.github,
