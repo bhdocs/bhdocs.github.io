@@ -1,0 +1,8 @@
+{
+  "label": "SoloPlay",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "SoloPlay is a D2BS based auto-play system to level any single legacy diablo 2 character class from 1-99."
+  }
+}
