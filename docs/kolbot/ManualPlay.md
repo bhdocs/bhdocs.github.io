@@ -65,7 +65,7 @@
 
 ## Manual.js
 
-1. it's another script written by [@Laz](https://github.com/laztheripper) for manual play, with description in this saved [html file](files/ManualPlayScriptWithPacketSniffingToolsAndMore.html) or [pdf format](https://github.com/blizzhackers/bhfiles/blob/master/pdf%20saved%20pages/d2bs%20script%20development/Manual%20play%20script%20with%20packet%20sniffing%20tools%20and%20more.pdf). 
+1. it's another script written by [@Laz](https://github.com/laztheripper) for manual play, with description in this saved [html file](pathname:///files/ManualPlayScriptWithPacketSniffingToolsAndMore.html) or [pdf format](https://github.com/blizzhackers/bhfiles/blob/master/pdf%20saved%20pages/d2bs%20script%20development/Manual%20play%20script%20with%20packet%20sniffing%20tools%20and%20more.pdf). 
 2. How to use (from bh topic):
 	* copy the script [Manual.js](https://raw.githubusercontent.com/blizzhackers/documentation/master/kolbot/custom-scripts/Manual.js) and save it as ...\libs\bots\Manual.js
 	* in your character's config add "Scripts.Manual = true;" (that can be near the line "Scripts.Follower = ...")

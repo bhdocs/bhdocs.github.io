@@ -16,7 +16,7 @@
 
 ### Perming with D2BotMuleLog
 
-For perming the chars with staying 2h in game, you should use the starter script [D2BotMuleLog](D2BotMuleLog.md/#d2botmulelog) like for muling purpose.
+For perming the chars with staying 2h in game, you should use the starter script [D2BotMuleLog](D2BotMuleLog) like for muling purpose.
 
 Edit `kolbot/libs/systems/mulelogger/LoggerConfig.js` with required info and set the value:
 

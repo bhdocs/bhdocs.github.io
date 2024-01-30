@@ -6,31 +6,6 @@
 
 # Miscellaneous Options
 
----
-
-* [local chat](#local-chat)
-* [updated Autosmurf](#updated-Autosmurf)
-* [Autochaos](#Autochaos)
-* [modded BattleOrders.js](#modded-BattleOrdersjs)
-* [how to define your own party and permit hardcore loot corpses](#how-to-define-your-own-party-and-permit-hardcore-loot-corpses)
-* [Baal.js with adds for hdin on wave 2](#Baaljs-with-adds-for-hdin-on-wave-2)
-* [staggered delays for creating games](#staggered-delays-for-creating-games)
-* [picking and selling junk items](#picking-and-selling-junk-items)
-* [picking and selling valuable items](#picking-and-selling-valuable-items)
-* [opening all chests](#opening-all-chests)
-* [open chests only from specific areas](#open-chests-only-from-specific-areas)
-* [silenced Follower](#silenced-Follower)
-* [LifeChicken restart profile](#lifechicken-restart-profile)
-* [use Cain and sell items](#use-Cain-and-sell-items)
-* [sell cubing items](#sell-cubing-items)
-* [inventory full](#inventory-full)
-* [cubing all kind of gems](#cubing-all-kind-of-gems)
-* [Taiwan disclaimer](#taiwan-disclaimer)
-* [Diabase & D2BS](#Diabase--D2BS)
-* [silencing the scripts](#silencing-the-scripts)
-
----
-
 ## Local chat
 
 * [@noah-](https://github.com/noah-) added in the char configuration files the options:

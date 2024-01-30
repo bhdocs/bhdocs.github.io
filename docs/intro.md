@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Diablo 2 Botting System (D2BS)
 
-## [d2bs](d2bs/#d2bs): d2bs core by [view developers](https://app.assembla.com/spaces/d2bs/team)
+## d2bs core by [view developers](https://app.assembla.com/spaces/d2bs/team)
 
 * [API Reference](https://github.com/noah-/d2bs/blob/master/README.md)
 * [Current Source](https://github.com/noah-/d2bs)

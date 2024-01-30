@@ -6,30 +6,6 @@
 
 # Multi Botting
 
----
-
-* [Info](#info)
-* [Game Creator](#game-creator)
-	* [create/edit the profile](#createedit-the-profile)
-	* [randomize the timers](#randomize-the-timers)
-* [Joining Games](#joining-games)
-	* [D2BotFollow](#d2botfollow)
-		* [the joiners profiles](#the-joiners-profiles)
-		* [randomize the timers](#randomize-the-timers-1)
-		* [edit the joining info](#edit-the-joining-info)		
-	* [D2BotChannel](#d2botchannel)
-* [Team Games](#team-games)
-	* [using MFTeam](#using-mfteam)
-		* [MFLeader](#mfleader)
-		* [MFHelper](#mfhelper)
-		* [silenced MFTeam](#silenced-mfteam)
-	* [using Followers](#using-followers)
-	* [followers exit delays](#followers-exit-delays)
-	* [dia-baal teams](#dia-baal-teams)
-
----
-
-## Info
 [d2bs](https://github.com/blizzhackers/kolbot) allows multi-botting.
 
 ## StarterConfig

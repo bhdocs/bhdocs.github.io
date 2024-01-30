@@ -51,7 +51,7 @@ you need these to be installed:
 
 ## keep bot files updated
 
-* download the d2bot-with-kolbot files using [tortoiseSVN](#download-with-tortoiseSVN)
+* download the d2bot-with-kolbot files using [tortoiseSVN](#download-with-tortoisesvn)
 * use SVN Update option when R-click the d2bs(d2bot-with-kolbot) folder
 * use TortoiseSVN [project monitor](https://github.com/blizzhackers/documentation/blob/master/d2bot/Autoupdate.md/#tortoisesvn-project-monitor)
 
