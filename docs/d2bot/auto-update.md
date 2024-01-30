@@ -2,9 +2,15 @@
 sidebar_position: 4
 ---
 
-# Autoupdate
+# Auto Update (SVN only)
 
 ## tortoiseSVN project monitor
+
+:::warning
+Downloading D2Bot#/kolbot using SVN is out-dated and may cause issues!
+
+[Reference the Download page for other methods!](download#updating)
+:::
 
 [TortoiseSVN](https://tortoisesvn.net/), version 1.9 and later, has a project monitor included, which has similar features as the [CommitMonitor](#commit-monitor). 
 You should start ...\TortoiseSVN\bin\TortoiseProc.exe. By default the interval for monitoring is set to 30 minutes, and can have a maximum value of 1000 minutes.

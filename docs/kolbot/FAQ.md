@@ -33,7 +33,7 @@ Some of the frequently asked questions with answers.
 ## I have an issue with my bot
 1. **Q:** I have a problem with my bot. What should i do??
 2. **A:** please [pastebin](https://pastebin.com/) your config and write your current bot version. Explain all issues carefully. It's important to keep your bot up to date using latest version (every update fixes a lot of bugs).
-Here you can find [latest kolbot](https://github.com/blizzhackers/kolbot/). Learn [how to keep it updated](/docs/d2bot/download#keep-bot-files-updated).
+Here you can find [latest kolbot](https://github.com/blizzhackers/kolbot/). Learn [how to keep it updated](/docs/d2bot/download#updating).
 
 ## best version of d2bs
 1. **Q:** which version of D2BS should i use ??
@@ -90,7 +90,7 @@ check [download guide](/docs/d2bot/download)
 2. **A:** update D2BS to latest version.
 
 * check if you run the 1.14d patch of Diablo II. Try to run D2LoD directly, using a Diablo II shortcut with windowed (-w) parameter.
-* check the installed MS dependencies (VC++ 2005, 2008, 2010 and .NET Framework 3.5, 4 or higher installed). try to re-install those MS dependencies [link here](/docs/d2bot/download#requirements)
+* check the installed MS dependencies (VC++ 2005, 2008, 2010 and .NET Framework 3.5, 4 or higher installed). try to re-install those MS dependencies [link here](/docs/d2bot/download#prerequisites)
 * you can get this error and several crashes when there are differences between ...\d2bs\d2bs.ini and ...\data\profile.json. When the manager correct the errors that profile will start just fine.
 
 * previous versions of d2bs released before the current with utf-8 encoding had other issues like:
