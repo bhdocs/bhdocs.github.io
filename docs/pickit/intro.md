@@ -12,7 +12,7 @@ sidebar_position: 1
 
 ---
 
-### [Custom pickits](custom/#custom-pickits)
+### [Custom pickits](custom-pickits)
 
 Some pickit files were shared in the past on blizzhackers.cc and projectetal.com by many users, and some were added from [autosmurf](https://github.com/blizzhackers/autosmurf/tree/master/d2bs/kolbot/pickit/autosmurf) and sonic [repo1](https://github.com/SetupSonic/clean-sonic/tree/master/pickit) + [repo2](https://github.com/SetupSonic/d2bot-with-kolbot-sonic/tree/master/d2bs/kolbot/pickit/Sonic) :
 
