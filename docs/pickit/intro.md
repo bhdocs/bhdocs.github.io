@@ -32,7 +32,7 @@ Some pickit files were shared in the past on blizzhackers.cc and projectetal.com
 
 ### d2nt based pickits
 
-* Note: these d2nt pickits are perfectly compatible with d2bs/kolbot, [NTItemAlias.ntl](d2nt/NTItemAlias.ntl) is the same (minor differences) with [NTItemAlias.dbl](https://github.com/blizzhackers/kolbot/blob/master/d2bs/kolbot/libs/NTItemAlias.dbl)
+* Note: these d2nt pickits are perfectly compatible with d2bs/kolbot, [NTItemAlias.ntl](/files/pickit/d2nt/NTItemAlias.ntl) is the same (minor differences) with [NTItemAlias.js](https://github.com/blizzhackers/kolbot/blob/696302efc380ee727bd0364a7981bd94351a4242/d2bs/kolbot/libs/core/GameData/NTItemAlias.js)
 
 * d2nt had four sets of files: normal, advanced, expert and master
 

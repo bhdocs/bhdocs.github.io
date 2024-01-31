@@ -15,7 +15,7 @@
 	* [white console(layer)](#white-consolelayer)
 ---
 
-## default keys
+## Default keys
 Here is just a quick run through of what each current key is, and what it will do for bot
 <table>
 	<tr>
@@ -199,15 +199,15 @@ Here is just a quick run through of what each current key is, and what it will d
 	</tr>
 </table>
 
-## changing the default keys
+### Changing the Default Keys
 
 If you need to change these keys, look to:
 
-* ...\d2bs\kolbot\tools\ToolsThread.js check \\Event functions section lines 342-409
+* ...\d2bs\kolbot\threads\ToolsThread.js check \\Event functions section lines 342-409
 
-* pause/resume key is also defined in line 37 of ...\d2bs\kolbot\tools\Heartbeat.js for pausing the starter script (before entering in a game)
+* pause/resume key is also defined in line 37 of ...\d2bs\kolbot\threads\Heartbeat.js for pausing the starter script (before entering in a game)
 
-* ...\d2bs\kolbot\tools\MapThread.js lines 721-724
+* ...\d2bs\kolbot\libs\core\manualplay\MapToolsThread.js lines 721-724
 
 
 For a reference on what these can be changed to, visit [javascriptkeycode.com](http://www.javascriptkeycode.com/) or [keycode.info](http://keycode.info/) webpages. Those are all the possible keycodes.
@@ -216,15 +216,15 @@ This is just a simple run through, to truly know what each key does, you'll need
 
 ## d2bs core commands
 
-### chat commands
+### Chat Commands
 press < Enter > and type:
 * .start -
 * .stop - will stop the current scripts. the profile will crash and it will be restarted in few seconds
 * .reload - will stop and reload the scripts. you are able to change config while in game. Don't use as it crashes after the game is done, Use Numpad /
 * .flushcache -
-* .load -
+* .load - 
 
-### white console(layer)
+### White Console(layer)
 display status messages out of game as well as in game:
 * < HOME > to show/hide console just for viewing
 * < ALT > + < HOME > to open the console for input, allows you to type commands into it
@@ -234,23 +234,23 @@ display status messages out of game as well as in game:
 	* stop - will stop the current scripts. the profile will crash and it will be restarted in few seconds
 	* reload - will stop and reload the scripts. you are able to change config while in game. Don't use as it crashes after the game is done. Use Numpad /
 	* flushcache -
-	* load
+	* load - passing a thread file into load will load/reload that thread. i.e `load("default.dbj")`
 * include - other scripts can be loaded: include("common/prototypes.js");
 * any other command is interpreted as a javascript string and will be executed (as per the old .exec).
 * all output is directed to the console instead of to the screen.
 * < Up arrow > will show the latest command that you typed in the console. Up/Down arrows will show different commands entered in the console
 * you can type on the console different javascript lines:
 ```javascript
-	var ip = Number(me.gameserverip.split(".")[3]);
-	print("IP of the game: " + ip);
+var ip = Number(me.gameserverip.split(".")[3]);
+print("IP of the game: " + ip);
 ``` 
-	and the result will be:
-```javascript
-	IP of the game: ... (the last part of the IP)
+and the result will be:
+```
+IP of the game: ... (the last part of the IP)
 ```
 * one defined variable (like ip) remains defined in that game, even you type reload in the meantime.
 * to find the mouse coordinates type:
 ```javascript
-	getMouseCoords(1);
+getMouseCoords(1);
 ```
-	and you'll get the X, Y coordinates. 
+and you'll get the X, Y coordinates. 

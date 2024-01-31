@@ -17,45 +17,44 @@
 
 ---
 
-### Info
+## Info
 It's a D2BS starter script which allow to log the items from inventory, stash and the equipped ones (including merc) to text files, then to show them in the `<Char Viewer>` tab of the manager.
 
 ### How to set up
 In kolbot/libs/systems/mulelogger/LoggerConfig.js fill out `LogAccounts`
 ```javascript
-    LogAccounts: {
-      /* Format:
-        "account1/password1/realm": ["charname1", "charname2 etc"],
-        "account2/password2/realm": ["charnameX", "charnameY etc"],
-        "account3/password3/realm": ["all"]
+LogAccounts: {
+  /* Format:
+    "account1/password1/realm": ["charname1", "charname2 etc"],
+    "account2/password2/realm": ["charnameX", "charnameY etc"],
+    "account3/password3/realm": ["all"]
 
-        To log a full account, put "account/password/realm": ["all"]
+    To log a full account, put "account/password/realm": ["all"]
 
-        realm = useast, uswest, europe or asia
+    realm = useast, uswest, europe or asia
 
-        Enter Individual entries are separated with a comma below
-      */
-      "exampleAcc/pa33word3/realm": ["all"],
-    },
+    Enter Individual entries are separated with a comma below
+  */
+  "exampleAcc/pa33word3/realm": ["all"],
+},
 ```
 ! the realm should be written with lowercase letters (see line 16), otherwise you'll get an error in OOG.js
 ```javascript
-	LogGame: ["", ""], // ["gamename", "password"]
+LogGame: ["", ""], // ["gamename", "password"]
 ```
-
 
 At the first run set the next variables (lines 10-17):
 ```javascript
-	LogNames: true, // Put account/character name on the picture
+LogNames: true, // Put account/character name on the picture
 ```
 ! set false if you wanna use your item images ...(related to SaveScreenShot: true)
 ```javascript
-	LogItemLevel: true, // Add item level to the picture
-	LogEquipped: false, // include equipped items
-	LogMerc: false, // include items merc has equipped (if alive)
-	SaveScreenShot: false, // Save pictures in jpg format (saved in 'Images' folder)
-	AutoPerm: true, // override InGameTime to perm character
-	IngameTime: rand(180, 210), // (180, 210) to avoid RD, increase it to (7230, 7290) for mule perming
+LogItemLevel: true, // Add item level to the picture
+LogEquipped: false, // include equipped items
+LogMerc: false, // include items merc has equipped (if alive)
+SaveScreenShot: false, // Save pictures in jpg format (saved in 'Images' folder)
+AutoPerm: true, // override InGameTime to perm character
+IngameTime: rand(180, 210), // (180, 210) to avoid RD, increase it to (7230, 7290) for mule perming
 ```
 
 LogEquipped - will be logged all items,  but the potions/tomes or other low level items will be skipped from log - see **skipItem** function from core/Item.js.
@@ -84,7 +83,7 @@ Every item is saved on different line, so you can edit those logging files easil
 
 It will be saved in ...\logs\MuleLog.json the current account and the current charname. This have to be edited or removed in case of crashes when some chars were omitted from logging. At the end of full account logging, that file is deleted automatically.
 
-### searching for items
+### Searching for Items
 In the left box of `<Char Viewer>` tab, select the branch (Realm or Account) where you are trying to find the item. Use the right-bottom search box. It accepts regular expressions, so you can search for just about anything as long as the query is correctly written.
 
 ![d2botmulelog5](img/kolbot-d2botmulelog5.png)
@@ -99,12 +98,12 @@ If you wanna save the image (check R-click options) of an item without having th
 
 You will find the images near D2Bot.exe in the subfolder \images , the same location for screenshots made during the logging.
 
-### optional mule viewer
+### Optional Mule Viewer
 
 Check [@rivx mule view project](http://www.rivsoft.net/projects/other/muleview/) and download [MuleView-v0.3.zip](http://www.rivsoft.net/download/other/MuleView-v0.3.zip) which allows you to view the logged files saved with d2bs. 
 [original shared topic](https://web.archive.org/web/20150613144010/http://www.blizzhackers.cc:80/viewtopic.php?f=172&t=500047)
 
-### dropper
+### Dropper
 It's a free public dropper - limedrop, included in the default branch (master = trunk) of repository
 - browser link [https://github.com/blizzhackers/kolbot/tree/master]
 - download link for TortoiseSVN [https://github.com/blizzhackers/kolbot/trunk/]
@@ -116,7 +115,7 @@ It's a free public dropper - limedrop, included in the default branch (master = 
 * [FAQ](https://github.com/blizzhackers/documentation/tree/master/limedrop#frequently-asked-questions)
 
 
-### diabase & d2bs
+### Diabase & D2bs
 [@Ned](https://github.com/Nedkali/)added some changes to Diabase to work with D2BS
 
 * download using SVN Checkout... -> (https://github.com/Nedkali/DiaBaseV1/trunk)

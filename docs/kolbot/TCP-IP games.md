@@ -14,7 +14,7 @@
 
 ---
 
-## info
+## Info
 
 * [d2bs](https://github.com/blizzhackers/kolbot) allows botting in TCP/IP created games
 
