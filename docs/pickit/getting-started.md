@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Getting Started
 
-### pickit walk-through
+## Pickit Walk-Through
 
 All pickit files are stored in d2bs/kolbot/pickit/ There are several default files to choose, you can also create and add your own or just edit these files.
 
@@ -23,7 +23,7 @@ It's important to check if your *.nip file is without errors. If you like you ca
 
 First off familiarize yourself with some important and useful information.
 
-[NTItemAlias.dbl](https://github.com/blizzhackers/kolbot/blob/master/d2bs/kolbot/libs/NTItemAlias.dbl) (or [NTItemAlias.ntl](d2nt/NTItemAlias.ntl) in d2nt case) will answer 99% of item names/stats questions.
+[NTItemAlias.js](https://github.com/blizzhackers/kolbot/blob/696302efc380ee727bd0364a7981bd94351a4242/d2bs/kolbot/libs/core/GameData/NTItemAlias.js) (or [NTItemAlias.ntl](/files/pickit/d2nt/NTItemAlias.ntl) in d2nt case) will answer 99% of item names/stats questions.
 
 **Remember**:
 
@@ -35,13 +35,13 @@ First off familiarize yourself with some important and useful information.
 
 That's pretty much all there is to writing a pickit. Remember that everyone makes simple mistakes, but you can use [NipCheck](nipcheck) to find easier the issued lines and to correct them.
 
-### format of the nip lines
+### Format of the nip lines
 
 NIP lines are of the format:
 
 **`{properties} # {stats} # {maxquantity}`**
 
-## things that go before \#
+### Things that go before \#
 
 \[type\], \[name\], \[class\], \[quality\], \[flag\], \[level\], \[prefix\], \[suffix\]
 
@@ -57,18 +57,18 @@ NIP lines are of the format:
  [suffix] = number of a suffix that should be on the item
 ```
 
-##### things that go after \#
+### Things that go after \#
 
 [stat keywords] : [Number or Alias]
 
 ```
  NTIPAliasStat		-> (skills,stats, etc)
 
- The odd-man out seems to be [level] as its used as [property], but in NTItemAlias.dbl it's listed as a **[stat]**
+ The odd-man out seems to be [level] as its used as [property], but in NTItemAlias.js it's listed as a **[stat]**
  [level] != [itemlevelreq]
 ```
 
-##### [comparison symbols](https://www.w3schools.com/JSREF/jsref_operators.asp):
+#### [Comparison symbols](https://www.w3schools.com/JSREF/jsref_operators.asp):
 
 ```javascript
  ==	equals
@@ -82,7 +82,7 @@ NIP lines are of the format:
  ()	group things up
 ```
 
-### item-parser syntax information
+### Item-Parser Syntax Information
 
 [keyword] separates into two groups:
 
@@ -176,9 +176,9 @@ For instance, this pickit line for rare Amazon helms:
 [type] == circlet && [quality] == rare && [flag] != ethereal # [amazonskills] == 2 && [frw] == 30 && [sockets] == 2
 ```
 
-### other examples
+### Other Examples
 
-##### ring
+#### Ring
 taking this line as an example:
 ```javascript
 [type] == ring && [quality] == rare # [lifeleech] >= 4 && [tohit] >= 80 && [dexterity] >= 10 && [maxhp] >= 20
@@ -193,7 +193,7 @@ life 20 or higher
 The line would not keep a ring that has three of the four stats specified, the line specifies the minimum stats the ring MUST have to be kept.
 So a ring with LifeLeech, Dexterity and Life wont be kept by this line as it is missing Attack rating (ToHit)
 
-##### max quantity
+#### Max Quantity
 this line:
 ```javascript
 [name] == helrune # # [maxquantity] == 3
@@ -202,7 +202,7 @@ is for hel runes to be kept, to be precise 3 of them in stash and then don't bot
 
 the two # # seperate properties, stats and maxquantity. If no stats are on the item (like with a rune or a gem) then the two still needs to be there for the syntax to be correct.
 
-##### druid pelt
+#### Druid Pelt
 One last example on how the () works in a line:
 ```javascript
 [type] == pelt && [quality] == rare && [flag] != ethereal # ([druidskills] >= 2 || [elementalskilltab] >= 2) && [skilltornado] >= 3 && [fhr] >= 10 && [sockets] >= 2
@@ -211,7 +211,7 @@ This line looks for:
 a druid helm (called pelt), [type] == pelt that is rare, [quality] == rare and that is NOT ethereal, [flag] != ethereal, then comes the first # so next comes the stats that should be on the item: either DruidSkills 2 or more (2 + to druid skills) OR elementalskilltab 2 or more (2 + to elemental skill tab) skilltornado 3 or higher (can't be higher than 3 but better safe than sorry if a bugged item happens to come along) faster hit recovery 3 or higher, [fhr] >= 3, sockets 2 or more, [sockets] >= 2
 
 
-### how to keep items unid
+### How to Keep Items Unid
 Any pickit line without requirements for **[stat]** will keep that item unidentified. If it doesn't, check other lines from active pickit files to see if you not doubled that item. use notepad++ < Find in Files > tool. Example: 
 ```javascript
 [name] == corona && [quality] == unique
@@ -219,12 +219,13 @@ Any pickit line without requirements for **[stat]** will keep that item unidenti
 [name] == amulet && [quality] == unique
 ```
 
-### charged skill items
+### Charged Skill Items
 
-the default lines 1301 - 1302 from NTItemAlias.dbl
+the default lines 1360 - 1362 from NTItemAlias.js
 ```javascript
-NTIPAliasStat["itemchargedskill"] = 204;
-NTIPAliasStat["teleportcharges"] = [204,3461];
+NTIPAliasStat["itemchargedskill"] = [204, 1];
+NTIPAliasStat["itemchargedskilllevel"] = [204, 2];
+NTIPAliasStat["teleportcharges"] = [204, 3461];
 ```
 but in default LLD.nip and shopbot.nip you can find some examples for **itemchargedskill**:
 ```javascript
@@ -240,9 +241,9 @@ so, you should use ... skillID from ...\kolbot\sdk\skills.txt
 ... [itemchargedskill] == xx ...
 ```
 
-### additional skill effect
+### Additional Skill Effect
 
-the default lines 1288 - 1297 from NTItemAlias.dbl
+the default lines 1288 - 1297 from NTItemAlias.js
 ```javascript
 NTIPAliasStat["itemskillonattack"] = 195;
 NTIPAliasStat["itemskillonkill"] = 196;
@@ -267,7 +268,7 @@ according to the [previous chapter](#charged-skill-items) you should use in the 
 ```
 
 
-### pickit FAQ
+### Pickit FAQ
 
 * **Q:** Why does my bot pick up and stash junk?
 
@@ -306,7 +307,7 @@ according to the [previous chapter](#charged-skill-items) you should use in the 
 
   **A:** Well [level] is kinda odd as although its listed as a [stat] in NTItemAlias its actually used as a [property], so if you want items under a certain level you would use **[name] && [quality] # [itemlevelreq] \<=**, and if you want to keep items of a certain Ilvl you would use **[name] && [quality] && [level]**
 
-##### d2nt pickit errors
+#### D2nt Pickit Errors
 
 * Syntax error 64 ~ Usually means problem is after #
 * Syntax Error 64 (missing ; ) ~ Missing or extra "][" or ")("
@@ -321,7 +322,7 @@ according to the [previous chapter](#charged-skill-items) you should use in the 
 And keep in mind just because you're not getting any errors from bot, that doesn't mean that your pickit isn't without mistakes.
 
 
-### pickit philosophy
+### Pickit Philosophy
 
 Everyone asks how to improve your pickit. The point usually being to rake in huge amounts of fg at a time. The secret is, most people customize their own. You can learn about customizing your pickit on the wiki.
 
@@ -333,7 +334,7 @@ Note: If your goal is to pick up godly goodness, be prepared to not pick up ANYT
 
 You could also see the max stats of items on http://classic.battle.net/diablo2exp/items/
 
-### fast cash
+### Fast Cash
 
 Now, let's talk about fast cash. Not a lot of cash, but fast cash.
 
@@ -372,7 +373,7 @@ Same thing here. Magic versions of these can have +3 all class skills, rares can
 
 This line is abbreviated. It's Paladin combat skills grand charm with >= 30 life. While these are hard to come by, it's no secret that they catch a high price.
 
-### big profit
+### Big Profit
 
 Of course, if you are looking for that godly gear, you'll need to beef up your lines.
 
@@ -386,7 +387,7 @@ While I haven't found one of these yet, I imagine it will sell fast.
 
 For these beefed up lines, I recommend Perfection by Sexuation.
 
-### editing
+### Editing
 
 Remember, what works for one person may not work for you. Even if you use a pre-made pickit, read through and make adjustments.
 
@@ -405,7 +406,7 @@ This line is for Arreat's Face with perfect defense. While this is ideal, it's r
 If that one with perfect defense drops, you will still keep it.
 
 
-### the specific of poison charms
+### The Specific of Poison Charms
 
 When an item has both a poison damage prefix and suffix, it's not the total damage but the damage rates (i.e. damage per second) that are summed (as are the lengths).
 

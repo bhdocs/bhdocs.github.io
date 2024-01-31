@@ -16,11 +16,11 @@
 
 ---
 
-## info
+## Info
 
 * [d2bs](https://github.com/blizzhackers/kolbot) allows manual playing
 
-## multi loader
+## Multi-Loader
 
 * use these parameters in the profile, and no script will be loaded.
 ```
@@ -29,9 +29,9 @@
 
 ## D2BotMap
 
-1. it's a starter script for manual play.
-2. you have to manually login into account and create or join game.
-3. it gives you some improvements like:
+1. It's a starter script for manual play.
+2. You have to manually login into account and create or join game.
+3. It gives you some improvements like:
 
 	* reveals map
 	* loads character config
@@ -67,7 +67,7 @@
 
 1. it's another script written by [@Laz](https://github.com/laztheripper) for manual play, with description in this saved [html file](pathname:///files/ManualPlayScriptWithPacketSniffingToolsAndMore.html) or [pdf format](https://github.com/blizzhackers/bhfiles/blob/master/pdf%20saved%20pages/d2bs%20script%20development/Manual%20play%20script%20with%20packet%20sniffing%20tools%20and%20more.pdf). 
 2. How to use (from bh topic):
-	* copy the script [Manual.js](https://raw.githubusercontent.com/blizzhackers/documentation/master/kolbot/custom-scripts/Manual.js) and save it as ...\libs\bots\Manual.js
+	* copy the script [Manual.js](https://raw.githubusercontent.com/blizzhackers/documentation/master/kolbot/custom-scripts/Manual.js) and save it as ...\libs\scripts\Manual.js
 	* in your character's config add "Scripts.Manual = true;" (that can be near the line "Scripts.Follower = ...")
 	* use D2BotBlank.dbj as starter script(entry point) for the profile.
 	* in d2bs.ini (located in ...\kolbot\d2bs) you should set "UseGamePrint=true", otherwise you won't see anything useful in game.
@@ -76,10 +76,10 @@
 
 3. if you wanna view maps + monsters while you are pressing < ALT > key you have to search to the line 727 of kolbot\tools\MapThread.js and to remove the 0x0D code. After that line is looking:
 ```javascript
-        hideFlags = [0x09, 0x0C, 0x01, 0x02, 0x0F, 0x18, 0x19, 0x21];
+hideFlags = [0x09, 0x0C, 0x01, 0x02, 0x0F, 0x18, 0x19, 0x21];
 ```
 
-## using followers
+## Using Followers
 
 you can run your leader and to have up to other 7 followers in your game.
 check [multibotting - joining games](https://github.com/blizzhackers/documentation/blob/master/kolbot/MultiBotting.md/#joining-games)

@@ -21,13 +21,13 @@ For perming the chars with staying 2h in game, you should use the starter script
 Edit `kolbot/libs/systems/mulelogger/LoggerConfig.js` with required info and set the value:
 
 ```javascript
-    IngameTime: rand(7230, 7290),
+IngameTime: rand(7230, 7290),
 ```
 
 or
 
 ```javascript
-    AutoPerm: true, // override InGameTime to perm character
+AutoPerm: true, // override InGameTime to perm character
 ```
 
 ### D2BotTimerRefresh
@@ -38,7 +38,7 @@ This will log on accounts/chars and will keep every char for random 15-25 second
 
 Edit the lines 27-29 with the required info
 ```javascript
-		"account1/password/realm": ["all"],
-		"account2/password/realm": ["all"],
-		"account3/password/realm": ["all"]
+"account1/password/realm": ["all"],
+"account2/password/realm": ["all"],
+"account3/password/realm": ["all"]
 ```
