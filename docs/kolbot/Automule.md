@@ -1,3 +1,9 @@
+[D2Bot Table of Contents](https://bhdocs.github.io/docs/category/d2bot)
+
+[Kolbot Table of Contents](https://bhdocs.github.io/docs/category/kolbot)
+
+---
+
 # Automule
 
 ---

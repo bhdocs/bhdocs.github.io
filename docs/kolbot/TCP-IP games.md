@@ -1,6 +1,6 @@
-[general table of content](https://github.com/blizzhackers/documentation/#diablo-2-botting-system)
+[D2Bot Table of Contents](https://bhdocs.github.io/docs/category/d2bot)
 
-[kolbot table of content](https://github.com/blizzhackers/documentation/tree/master/kolbot/#kolbot)
+[Kolbot Table of Contents](https://bhdocs.github.io/docs/category/kolbot)
 
 ---
 
