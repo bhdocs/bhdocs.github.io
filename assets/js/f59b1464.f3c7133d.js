@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbh_docs=self.webpackChunkbh_docs||[]).push([[376],{781:i=>{i.exports=JSON.parse('{"title":"Pickit","slug":"/category/pickit","permalink":"/category/pickit","navigation":{"previous":{"title":"Brief History","permalink":"/SoloPlay/history"},"next":{"title":"Introduction","permalink":"/pickit/intro"}}}')}}]);

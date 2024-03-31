@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbh_docs=self.webpackChunkbh_docs||[]).push([[6053],{8195:t=>{t.exports=JSON.parse('{"title":"Kolbot","description":"library scripts by @kolton","slug":"/category/kolbot","permalink":"/category/kolbot","navigation":{"previous":{"title":"Keylist","permalink":"/d2bot/keylist"},"next":{"title":"Automule","permalink":"/kolbot/Automule"}}}')}}]);
