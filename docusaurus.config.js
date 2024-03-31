@@ -61,12 +61,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/blizzhackers-social-card.jpg',
       navbar: {
         title: 'Documentation',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Blizzhackers',
+          src: 'img/blizzhackers.png',
         },
         items: [
           //{
@@ -86,27 +86,27 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
                 label: 'D2BS',
-                to: '/docs/intro',
+                to: '/',
               },
               {
                 label: 'D2Bot#',
-                to: '/docs/category/d2bot',
+                to: '/category/d2bot',
               },
               {
                 label: 'Kolbot',
-                to: '/docs/category/kolbot',
+                to: '/category/kolbot',
               },
               {
                 label: 'SoloPlay',
-                to: '/docs/category/soloplay',
+                to: '/category/soloplay',
               },
               {
                 label: 'Limedrop',
-                to: '/docs/category/limedrop',
+                to: '/category/limedrop',
               },
             ],
           },
