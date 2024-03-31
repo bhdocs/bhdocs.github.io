@@ -47,7 +47,9 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/bhdocs/bhdocs.github.io/blob/master',
+          routeBasePath: '/',
         },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -59,20 +61,20 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/blizzhackers-social-card.jpg',
       navbar: {
-        title: 'Blizzhackers',
+        title: 'Documentation',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Blizzhackers',
+          src: 'img/blizzhackers.png',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Documentation',
-          },
+          //{
+          //  type: 'docSidebar',
+          //  sidebarId: 'tutorialSidebar',
+          //  position: 'left',
+          //  label: 'Documentation',
+          //},
           {
             href: 'https://github.com/bhdocs/bhdocs.github.io',
             label: 'GitHub',
@@ -84,27 +86,27 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
                 label: 'D2BS',
-                to: '/docs/intro',
+                to: '/',
               },
               {
                 label: 'D2Bot#',
-                to: '/docs/category/d2bot',
+                to: '/category/d2bot',
               },
               {
                 label: 'Kolbot',
-                to: '/docs/category/kolbot',
+                to: '/category/kolbot',
               },
               {
                 label: 'SoloPlay',
-                to: '/docs/category/soloplay',
+                to: '/category/soloplay',
               },
               {
                 label: 'Limedrop',
-                to: '/docs/category/limedrop',
+                to: '/category/limedrop',
               },
             ],
           },
