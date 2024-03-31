@@ -33,13 +33,13 @@ Some of the frequently asked questions with answers.
 ## I have an issue with my bot
 1. **Q:** I have a problem with my bot. What should i do??
 2. **A:** please [pastebin](https://pastebin.com/) your config and write your current bot version. Explain all issues carefully. It's important to keep your bot up to date using latest version (every update fixes a lot of bugs).
-Here you can find [latest kolbot](https://github.com/blizzhackers/kolbot/). Learn [how to keep it updated](/docs/d2bot/download#updating).
+Here you can find [latest kolbot](https://github.com/blizzhackers/kolbot/). Learn [how to keep it updated](/d2bot/download#updating).
 
 ## Best version of d2bs
 1. **Q:** which version of D2BS should i use ??
 2. **A:** trunk is the latest **stable** version.
 * you can use [TortoiseSVN](https://tortoisesvn.net/downloads.html) on [https://github.com/blizzhackers/kolbot/trunk/]
-check [download guide](/docs/d2bot/download)
+check [download guide](/d2bot/download)
 
 ## How to change the pause button?
 1. **Q:** I don't have numeric keyboard. Where can I change my pause button ??
@@ -71,7 +71,7 @@ check [download guide](/docs/d2bot/download)
 
 ## Mpq or raw keys?
 1. **Q:** can I use mpq or raw keys in profle manager?
-2. **A:** you can use them both i.e raw keys and mpq for the same list or profile. - see [d2bs Keylist](/docs/d2bot/keylist)
+2. **A:** you can use them both i.e raw keys and mpq for the same list or profile. - see [d2bs Keylist](/d2bot/keylist)
 
 ## How many bots in one game
 1. **Q:** is it possible to run more than 4 bots in one game?
@@ -90,7 +90,7 @@ check [download guide](/docs/d2bot/download)
 2. **A:** update D2BS to latest version.
 
 * check if you run the 1.14d patch of Diablo II. Try to run D2LoD directly, using a Diablo II shortcut with windowed (-w) parameter.
-* check the installed MS dependencies (VC++ 2005, 2008, 2010 and .NET Framework 3.5, 4 or higher installed). try to re-install those MS dependencies [link here](/docs/d2bot/download#prerequisites)
+* check the installed MS dependencies (VC++ 2005, 2008, 2010 and .NET Framework 3.5, 4 or higher installed). try to re-install those MS dependencies [link here](/d2bot/download#prerequisites)
 * you can get this error and several crashes when there are differences between ...\d2bs\d2bs.ini and ...\data\profile.json. When the manager correct the errors that profile will start just fine.
 
 * previous versions of d2bs released before the current with utf-8 encoding had other issues like:
@@ -128,7 +128,7 @@ check [download guide](/docs/d2bot/download)
 
 ## You were disconnected from d2 server
 1. **Q:** I get all the time d2 error when it's opened by D2BS: "You were disconnected from d2 server. Please reconnect" 
-2. **A:** clone your profile, and in the Key List field of cloned profile set none, and the default (installation) keyset will be loaded. Set properly your [d2bs Keylist](/docs/d2bot/keylist).
+2. **A:** clone your profile, and in the Key List field of cloned profile set none, and the default (installation) keyset will be loaded. Set properly your [d2bs Keylist](/d2bot/keylist).
 
 ## Game with that name already exists
 1. **Q:** The leader get "Game With That Name Already Exists" on d2 server, but all followers get "the game does not exist" message when they attempt to join.
@@ -148,7 +148,7 @@ check [download guide](/docs/d2bot/download)
 
 ## I cannot change account
 1. **Q:** I'm playing manually and I cannot change the first account with I did the first log in. Even I enter other account the character screen will be for the first account, or in the worst case an empty character selection screen with Connecting ... 
-2. **A:** Uncheck the "RD Blocker" box, because that is causing it. In the [guide](/docs/d2bot/setup#create-a-profile) is written:
+2. **A:** Uncheck the "RD Blocker" box, because that is causing it. In the [guide](/d2bot/setup#create-a-profile) is written:
 > 19. Enables RD Block (**don't enable unless you know what you are doing**)
 * it does nothing useful for most people
 
