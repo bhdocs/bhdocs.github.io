@@ -41,7 +41,7 @@ To update simply repeat the steps to download as zip and extract in the same loc
 * Make sure git was properly installed by typing `git -v` in the newly opened command prompt, you should see a message with the git version for example `git version 2.43.0.windows.1`. If you do not get this message please reinstall git and try again or choose another method of downloading D2Bot#.
 * On the left-hand side you can see the path that the command prompt is currently in, for example `C:\Users\<your username>`, in this example we will download to the desktop of the current user so type `cd C:\Users\<your username>\Desktop`. You can choose whatever path you'd like
 * Make sure you are at the correct path by checking the left-hand side path
-* Type in `git clone https://github.com/blizzhackers/kolbot` and wait for the command to complete
+* Type in `git clone --recurse-submodules https://github.com/blizzhackers/kolbot` and wait for the command to complete
 * D2Bot# with kolbot is now downloaded in your chosen path!
 
 ![image](img/d2bot-git-cli1.png)
@@ -118,6 +118,9 @@ Downloading D2Bot#/kolbot using SVN is out-dated and may cause issues!
 	* then you can use tortoiseSVN Checkout from a new url [https://github.com/blizzhackers/kolbot/trunk](https://github.com/blizzhackers/kolbot/trunk).
 	* before proceeding check the paths and correct them.
 	* here you'll get a warning for checkout in a non-empty folder. bypass it and it will be ok.
+
+## After download
+* Now that you have kolbot downloaded the first thing you must do is navigate to the root directory and run the setup.bat file. This will bootstrap kolbot with the necessary files for it to run. If you miss this step then d2bot# will not start.
 
 ## Compatibility
 
