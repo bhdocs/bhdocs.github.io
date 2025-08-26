@@ -4,7 +4,9 @@ sidebar_position: 1
 
 # Introduction
 
-### Tools
+## Tools
+
+* [vsnip-check](https://marketplace.visualstudio.com/items?itemName=theBGuy.vsnip-check): VS-Code plugin for syntax highlighting, error reporting, and code completion in .nip files by [@theBGuy](https://github.com/theBGuy)
 
 * [NipCheck](nipcheck): notepad++ plugin for finding errors in *.nip files, by [@noah-](https://github.com/noah-)
 
@@ -12,7 +14,7 @@ sidebar_position: 1
 
 ---
 
-### [Custom pickits](custom-pickits)
+## [Custom pickits](custom-pickits)
 
 Some pickit files were shared in the past on blizzhackers.cc and projectetal.com by many users, and some were added from [autosmurf](https://github.com/blizzhackers/autosmurf/tree/master/d2bs/kolbot/pickit/autosmurf) and sonic [repo1](https://github.com/SetupSonic/clean-sonic/tree/master/pickit) + [repo2](https://github.com/SetupSonic/d2bot-with-kolbot-sonic/tree/master/d2bs/kolbot/pickit/Sonic) :
 
@@ -30,7 +32,7 @@ Some pickit files were shared in the past on blizzhackers.cc and projectetal.com
 
 ---
 
-### d2nt based pickits
+## D2nt based pickits
 
 * Note: these d2nt pickits are perfectly compatible with d2bs/kolbot, [NTItemAlias.ntl](/files/pickit/d2nt/NTItemAlias.ntl) is the same (minor differences) with [NTItemAlias.js](https://github.com/blizzhackers/kolbot/blob/696302efc380ee727bd0364a7981bd94351a4242/d2bs/kolbot/libs/core/GameData/NTItemAlias.js)
 
