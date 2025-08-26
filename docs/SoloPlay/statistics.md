@@ -6,11 +6,11 @@ sidebar_position: 9
 
 |  Class      |  1-70  |  1-80  |  1-90  |
 |:------------|:------:|:------:|:------:|
-| Amazon      | 22h    |        |        |
+| Amazon      | 22h    | 43h    |        |
 | Assassin    | 22h    | 37h    |        |
-| Barbarian   | 38h    | 82h	  |        |
-| Druid       | 19h    | 34h    |        |
-| Necromancer | 20h    |        |        |
+| Barbarian   | 40h    | 82h	  |        |
+| Druid       | 19h    | 27h    |        |
+| Necromancer | 20h    | 30h    |        |
 | Paladin     | 18h    | 26h    |        |
 | Sorceress   | 15h    | 24h    |        |
 
